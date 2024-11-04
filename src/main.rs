@@ -111,6 +111,7 @@ fn main() {
 
             let mut http = EspHttpServer::new(&server::Configuration {
                 http_port: 80,
+                ctrl_port: 90,
                 https_port: 443,
                 max_sessions: 5,
                 session_timeout: Duration::from_secs(10),
